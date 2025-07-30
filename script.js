@@ -209,15 +209,24 @@ const mockContent = [
 const socialPlatforms = {
     facebook: {
         name: 'Facebook',
-        shareUrl: (url, title) => `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}&quote=${encodeURIComponent(title)}`
+        shareUrl: (url, title, description) => {
+            const text = description || title;
+            return `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}&quote=${encodeURIComponent(text)}`;
+        }
     },
     x: {
         name: 'X',
-        shareUrl: (url, title) => `https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(title)}`
+        shareUrl: (url, title, description) => {
+            const text = description || title;
+            return `https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}`;
+        }
     },
     linkedin: {
         name: 'LinkedIn',
-        shareUrl: (url, title) => `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`
+        shareUrl: (url, title, description) => {
+            // LinkedIn sharing doesn't support pre-filled text in the URL, but we can still pass it for consistency
+            return `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`;
+        }
     }
 };
 
@@ -530,7 +539,12 @@ function shareOn(platform) {
     const socialPlatform = socialPlatforms[platform];
     
     if (socialPlatform) {
-        const shareUrl = socialPlatform.shareUrl(currentUrl, currentItem.title);
+        // Get platform-specific content if available
+        const platformContent = currentItem.platformContent && currentItem.platformContent[platform];
+        const description = platformContent ? platformContent.description : currentItem.description;
+        const title = currentItem.title;
+        
+        const shareUrl = socialPlatform.shareUrl(currentUrl, title, description);
         window.open(shareUrl, '_blank', 'width=600,height=400');
     }
 }
