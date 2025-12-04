@@ -244,8 +244,8 @@ function initializePage() {
     const newPosts = mockContent.filter(item => item.category === 'new-posts');
     const featuredContent = mockContent.filter(item => item.category === 'featured');
     
-    renderThumbnails('new-posts-grid', newPosts.slice(0, 4));
-    renderThumbnails('featured-grid', featuredContent.slice(0, 4));
+    renderThumbnails('scp-new-posts-grid', newPosts.slice(0, 4));
+    renderThumbnails('scp-featured-grid', featuredContent.slice(0, 4));
 }
 
 function renderThumbnails(containerId, items) {
@@ -260,14 +260,14 @@ function renderThumbnails(containerId, items) {
 
 function createThumbnailElement(item) {
     const thumbnail = document.createElement('div');
-    thumbnail.className = 'thumbnail';
+    thumbnail.className = 'scp-thumbnail';
     thumbnail.onclick = () => openModalWithItem(item);
     
     thumbnail.innerHTML = `
-        <div class="thumbnail-container">
-            <img src="${item.thumbnail}" alt="${item.title}" class="thumbnail-image">
-            <div class="thumbnail-overlay"></div>
-            <div class="thumbnail-title">${item.title}</div>
+        <div class="scp-thumbnail-container">
+            <img src="${item.thumbnail}" alt="${item.title}" class="scp-thumbnail-image">
+            <div class="scp-thumbnail-overlay"></div>
+            <div class="scp-thumbnail-title">${item.title}</div>
         </div>
     `;
     
@@ -277,8 +277,8 @@ function createThumbnailElement(item) {
 function setupEventListeners() {
     // Keyboard navigation
     document.addEventListener('keydown', function(e) {
-        const modal = document.getElementById('modal');
-        if (!modal.classList.contains('active')) return;
+        const modal = document.getElementById('scp-modal');
+        if (!modal.classList.contains('scp-active')) return;
         
         switch(e.key) {
             case 'Escape':
@@ -313,14 +313,14 @@ function openModalWithItem(item) {
 }
 
 function showModal() {
-    const modal = document.getElementById('modal');
-    modal.classList.add('active');
+    const modal = document.getElementById('scp-modal');
+    modal.classList.add('scp-active');
     document.body.style.overflow = 'hidden';
 }
 
 function closeModal() {
-    const modal = document.getElementById('modal');
-    modal.classList.remove('active');
+    const modal = document.getElementById('scp-modal');
+    modal.classList.remove('scp-active');
     document.body.style.overflow = '';
 }
 
@@ -330,11 +330,11 @@ function updateModalContent() {
     const currentItem = currentModalItems[currentItemIndex];
     
     // Update counter and title
-    document.getElementById('modal-counter').textContent = `${currentItemIndex + 1} of ${currentModalItems.length}`;
-    document.getElementById('modal-title').textContent = currentItem.title;
+    document.getElementById('scp-modal-counter').textContent = `${currentItemIndex + 1} of ${currentModalItems.length}`;
+    document.getElementById('scp-modal-title').textContent = currentItem.title;
     
     // Update image or video
-    const modalImageSection = document.querySelector('.modal-image-section');
+    const modalImageSection = document.querySelector('.scp-modal-image-section');
     
     if (currentItem.type === 'video') {
         modalImageSection.innerHTML = `
@@ -348,12 +348,12 @@ function updateModalContent() {
                 allowfullscreen
                 style="min-height: 300px;">
             </iframe>
-            <button class="nav-arrow nav-arrow-left" onclick="previousItem()">
+            <button class="scp-nav-arrow scp-nav-arrow-left" onclick="previousItem()">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <polyline points="15,18 9,12 15,6"></polyline>
                 </svg>
             </button>
-            <button class="nav-arrow nav-arrow-right" onclick="nextItem()">
+            <button class="scp-nav-arrow scp-nav-arrow-right" onclick="nextItem()">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <polyline points="9,18 15,12 9,6"></polyline>
                 </svg>
@@ -361,13 +361,13 @@ function updateModalContent() {
         `;
     } else {
         modalImageSection.innerHTML = `
-            <img id="modal-image" src="${currentItem.highResImage}" alt="${currentItem.title}" class="modal-image">
-            <button class="nav-arrow nav-arrow-left" onclick="previousItem()">
+            <img id="scp-modal-image" src="${currentItem.highResImage}" alt="${currentItem.title}" class="scp-modal-image">
+            <button class="scp-nav-arrow scp-nav-arrow-left" onclick="previousItem()">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <polyline points="15,18 9,12 15,6"></polyline>
                 </svg>
             </button>
-            <button class="nav-arrow nav-arrow-right" onclick="nextItem()">
+            <button class="scp-nav-arrow scp-nav-arrow-right" onclick="nextItem()">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <polyline points="9,18 15,12 9,6"></polyline>
                 </svg>
@@ -376,30 +376,30 @@ function updateModalContent() {
     }
     
     // Update content details
-    document.getElementById('modal-content-title').textContent = currentItem.title;
-    document.getElementById('modal-description').textContent = currentItem.description;
+    document.getElementById('scp-modal-content-title').textContent = currentItem.title;
+    document.getElementById('scp-modal-description').textContent = currentItem.description;
     
     // Update tags
-    const tagsContainer = document.getElementById('modal-tags');
+    const tagsContainer = document.getElementById('scp-modal-tags');
     tagsContainer.innerHTML = '';
     currentItem.tags.forEach(tag => {
         const tagElement = document.createElement('span');
-        tagElement.className = 'tag';
+        tagElement.className = 'scp-tag';
         tagElement.textContent = `#${tag}`;
         tagsContainer.appendChild(tagElement);
     });
     
     // Update download/copy button
-    const platformDownloads = document.getElementById('platform-downloads');
-    const copyEmbedButton = document.getElementById('copy-embed-button');
+    const platformDownloads = document.getElementById('scp-platform-downloads');
+    const copyEmbedButton = document.getElementById('scp-copy-embed-button');
     
     if (currentItem.type === 'video') {
         // Hide platform downloads and show embed button for videos
-        platformDownloads.querySelectorAll('.platform-download-button').forEach(btn => btn.style.display = 'none');
+        platformDownloads.querySelectorAll('.scp-platform-download-button').forEach(btn => btn.style.display = 'none');
         copyEmbedButton.style.display = 'flex';
     } else {
         // Show platform downloads and hide embed button for images
-        platformDownloads.querySelectorAll('.platform-download-button').forEach(btn => btn.style.display = 'flex');
+        platformDownloads.querySelectorAll('.scp-platform-download-button').forEach(btn => btn.style.display = 'flex');
         copyEmbedButton.style.display = 'none';
     }
     
@@ -407,8 +407,8 @@ function updateModalContent() {
     updateThumbnailNavigation();
     
     // Show/hide navigation arrows
-    const leftArrow = document.querySelector('.nav-arrow-left');
-    const rightArrow = document.querySelector('.nav-arrow-right');
+    const leftArrow = document.querySelector('.scp-nav-arrow-left');
+    const rightArrow = document.querySelector('.scp-nav-arrow-right');
     
     if (currentModalItems.length > 1) {
         leftArrow.style.display = 'block';
@@ -420,8 +420,8 @@ function updateModalContent() {
 }
 
 function updateThumbnailNavigation() {
-    const container = document.getElementById('modal-thumbnails');
-    const scrollContainer = container.querySelector('.thumbnails-scroll');
+    const container = document.getElementById('scp-modal-thumbnails');
+    const scrollContainer = container.querySelector('.scp-thumbnails-scroll');
     
     if (currentModalItems.length <= 1) {
         container.style.display = 'none';
@@ -433,7 +433,7 @@ function updateThumbnailNavigation() {
     
     currentModalItems.forEach((item, index) => {
         const thumbnailElement = document.createElement('div');
-        thumbnailElement.className = `modal-thumbnail ${index === currentItemIndex ? 'active' : ''}`;
+        thumbnailElement.className = `scp-modal-thumbnail ${index === currentItemIndex ? 'scp-active' : ''}`;
         thumbnailElement.onclick = () => {
             currentItemIndex = index;
             updateModalContent();
@@ -510,7 +510,7 @@ function copyEmbedCode() {
     if (currentItem.type === 'video' && currentItem.embedCode) {
         navigator.clipboard.writeText(currentItem.embedCode).then(() => {
             // Show success feedback
-            const button = document.getElementById('copy-embed-button');
+            const button = document.getElementById('scp-copy-embed-button');
             const originalText = button.innerHTML;
             button.innerHTML = `
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
