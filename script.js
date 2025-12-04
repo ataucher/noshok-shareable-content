@@ -205,31 +205,6 @@ const mockContent = [
     }
 ];
 
-// Social platforms configuration
-const socialPlatforms = {
-    facebook: {
-        name: 'Facebook',
-        shareUrl: (url, title, description) => {
-            const text = description || title;
-            return `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}&quote=${encodeURIComponent(text)}`;
-        }
-    },
-    x: {
-        name: 'X',
-        shareUrl: (url, title, description) => {
-            const text = description || title;
-            return `https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}`;
-        }
-    },
-    linkedin: {
-        name: 'LinkedIn',
-        shareUrl: (url, title, description) => {
-            // LinkedIn sharing doesn't support pre-filled text in the URL, but we can still pass it for consistency
-            return `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`;
-        }
-    }
-};
-
 // Global state
 let currentModalItems = [];
 let currentItemIndex = 0;
@@ -392,15 +367,18 @@ function updateModalContent() {
     // Update download/copy button
     const platformDownloads = document.getElementById('scp-platform-downloads');
     const copyEmbedButton = document.getElementById('scp-copy-embed-button');
+    const downloadButton = document.getElementById('scp-download-button');
     
     if (currentItem.type === 'video') {
         // Hide platform downloads and show embed button for videos
         platformDownloads.querySelectorAll('.scp-platform-download-button').forEach(btn => btn.style.display = 'none');
         copyEmbedButton.style.display = 'flex';
+        downloadButton.style.display = 'none';
     } else {
         // Show platform downloads and hide embed button for images
         platformDownloads.querySelectorAll('.scp-platform-download-button').forEach(btn => btn.style.display = 'flex');
         copyEmbedButton.style.display = 'none';
+        downloadButton.style.display = 'flex';
     }
     
     // Update thumbnail navigation
@@ -502,6 +480,33 @@ async function downloadForPlatform(platform) {
     }
 }
 
+function copyFacebookText() {
+    if (currentModalItems.length === 0) return;
+    const currentItem = currentModalItems[currentItemIndex];
+    const platformContent = currentItem.platformContent && currentItem.platformContent.facebook;
+    const textToCopy = platformContent ? platformContent.description : currentItem.description;
+    const button = document.getElementById('scp-copy-text-button');
+    
+    navigator.clipboard.writeText(textToCopy || '').then(() => {
+        if (!button) return;
+        const original = button.innerHTML;
+        button.innerHTML = `
+            <i class="ri-check-line" aria-hidden="true"></i>
+            <span class="scp-copy-text-label">Copied</span>
+        `;
+        button.style.backgroundColor = '#dcfce7';
+        button.style.borderColor = '#4ade80';
+        setTimeout(() => {
+            button.innerHTML = original;
+            button.style.backgroundColor = '#f9fafb';
+            button.style.borderColor = '#e5e7eb';
+        }, 1500);
+    }).catch(err => {
+        console.error('Failed to copy text:', err);
+        alert('Failed to copy text. Please try again.');
+    });
+}
+
 function copyEmbedCode() {
     if (currentModalItems.length === 0) return;
     
@@ -513,38 +518,18 @@ function copyEmbedCode() {
             const button = document.getElementById('scp-copy-embed-button');
             const originalText = button.innerHTML;
             button.innerHTML = `
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <polyline points="20,6 9,17 4,12"></polyline>
-                </svg>
+                <i class="ri-check-line" aria-hidden="true"></i>
                 Copied!
-            `;
-            button.style.backgroundColor = '#10b981';
-            
-            setTimeout(() => {
-                button.innerHTML = originalText;
-                button.style.backgroundColor = '#2563eb';
-            }, 2000);
+        `;
+        button.style.backgroundColor = '#10b981';
+        
+        setTimeout(() => {
+            button.innerHTML = originalText;
+            button.style.backgroundColor = '#006341';
+        }, 2000);
         }).catch(err => {
             console.error('Failed to copy embed code:', err);
             alert('Failed to copy embed code. Please try again.');
         });
-    }
-}
-
-function shareOn(platform) {
-    if (currentModalItems.length === 0) return;
-    
-    const currentItem = currentModalItems[currentItemIndex];
-    const currentUrl = window.location.href;
-    const socialPlatform = socialPlatforms[platform];
-    
-    if (socialPlatform) {
-        // Get platform-specific content if available
-        const platformContent = currentItem.platformContent && currentItem.platformContent[platform];
-        const description = platformContent ? platformContent.description : currentItem.description;
-        const title = currentItem.title;
-        
-        const shareUrl = socialPlatform.shareUrl(currentUrl, title, description);
-        window.open(shareUrl, '_blank', 'width=600,height=400');
     }
 }
