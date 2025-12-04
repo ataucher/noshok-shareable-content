@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shareable Content</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/scp-styles.css">
 </head>
 <body>
     <div class="scp-min-h-screen scp-bg-gradient">
@@ -17,7 +17,7 @@
             </div>
         </header>
 
-        <!-- Main Content -->
+        <!-- SCP Content -->
         <main class="scp-main-content">
             <div class="scp-content-wrapper">
                 <!-- New Posts Section -->
@@ -31,7 +31,7 @@
                         <!-- Thumbnails will be populated by JavaScript -->
                     </div>
                     
-                    <button class="scp-more-button" onclick="openModal('new-posts')">more</button>
+                    <button class="scp-more-button" onclick="scpOpenModal('new-posts')">more</button>
                 </div>
                 
                 <!-- Featured Content Section -->
@@ -45,14 +45,14 @@
                         <!-- Thumbnails will be populated by JavaScript -->
                     </div>
                     
-                    <button class="scp-more-button" onclick="openModal('featured')">more</button>
+                    <button class="scp-more-button" onclick="scpOpenModal('featured')">more</button>
                 </div>
             </div>
         </main>
 
         <!-- Modal -->
         <div id="scp-modal" class="scp-modal">
-            <div class="scp-modal-backdrop" onclick="closeModal()"></div>
+            <div class="scp-modal-backdrop" onclick="scpCloseModal()"></div>
             
             <div class="scp-modal-content">
                 <!-- Header -->
@@ -61,7 +61,7 @@
                         <span class="scp-modal-counter" id="scp-modal-counter">1 of 6</span>
                         <h3 class="scp-modal-title" id="scp-modal-title">Content Title</h3>
                     </div>
-                    <button class="scp-modal-close" onclick="closeModal()">
+                    <button class="scp-modal-close" onclick="scpCloseModal()">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <line x1="18" y1="6" x2="6" y2="18"></line>
                             <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -76,12 +76,12 @@
                         <img id="scp-modal-image" src="" alt="" class="scp-modal-image">
                         
                         <!-- Navigation Arrows -->
-                        <button class="scp-nav-arrow scp-nav-arrow-left" onclick="previousItem()">
+                        <button class="scp-nav-arrow scp-nav-arrow-left" onclick="scpPreviousItem()">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="15,18 9,12 15,6"></polyline>
                             </svg>
                         </button>
-                        <button class="scp-nav-arrow scp-nav-arrow-right" onclick="nextItem()">
+                        <button class="scp-nav-arrow scp-nav-arrow-right" onclick="scpNextItem()">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="9,18 15,12 9,6"></polyline>
                             </svg>
@@ -94,7 +94,7 @@
                             <h2 class="scp-modal-content-title" id="scp-modal-content-title">Content Title</h2>
                             <div class="scp-description-row">
                                 <p class="scp-modal-description" id="scp-modal-description">Content description</p>
-                                <button class="scp-copy-text-button" id="scp-copy-text-button" onclick="copyFacebookText()" aria-label="Copy Facebook text">
+                                <button class="scp-copy-text-button" id="scp-copy-text-button" onclick="scpCopyFacebookText()" aria-label="Copy Facebook text">
                                     <i class="ri-file-copy-line" aria-hidden="true"></i>
                                     <span class="scp-copy-text-label">Copy text</span>
                                 </button>
@@ -110,10 +110,10 @@
                         <div class="scp-modal-actions">
                             <p class="scp-social-label">Download assets:</p>
                             <div class="scp-platform-downloads" id="scp-platform-downloads">
-                                <button class="scp-platform-download-button scp-facebook" id="scp-download-button" onclick="downloadForPlatform('facebook')">
+                                <button class="scp-platform-download-button scp-facebook" id="scp-download-button" onclick="scpDownloadForPlatform('facebook')">
                                     Download assets
                                 </button>
-                                <button class="scp-copy-embed-button" id="scp-copy-embed-button" onclick="copyEmbedCode()" style="display: none;">
+                                <button class="scp-copy-embed-button" id="scp-copy-embed-button" onclick="scpCopyEmbedCode()" style="display: none;">
                                     <i class="ri-file-copy-line" aria-hidden="true"></i>
                                     Copy Embed Code
                                 </button>
@@ -132,6 +132,6 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="/scp-script.js"></script>
 </body>
 </html>

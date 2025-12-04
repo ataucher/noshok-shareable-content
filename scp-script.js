@@ -5,19 +5,19 @@ const mockContent = [
         id: 'np1',
         title: '900 Series Gauges Reduced Pricing',
         description: 'We are lowering product pricing for the fourth time this year - this time on our 900 Series Pressure Gauges!',
-        thumbnail: 'img/900-Series.jpg',
-        highResImage: 'img/900-Series.jpg',
+        thumbnail: 'scp-img/900-Series.jpg',
+        highResImage: 'scp-img/900-Series.jpg',
         platformContent: {
             facebook: {
-                image: 'img/900-Series.jpg',
+                image: 'scp-img/900-Series.jpg',
                 description: 'We are lowering product pricing for the fourth time this year - this time on our 900 Series Pressure Gauges! Prices have been reduced on NOSHOK 901 Series (Stainless Steel Case, liquid filled, bottom connection) and 911 Series (Stainless Steel Case, liquid filled, back connection) Pressure Gauges, as well as the addition of more 1-1/2" and 2" gauges available from inventory for faster delivery times. We have also reduced the pricing on several gauge accessories. Contact NOSHOK Corporate Headquarters or your NOSHOK Regional Sales Manager for more details! https://bit.ly/4g3ezOr'
             },
             x: {
-                image: 'img/900-Series.jpg',
+                image: 'scp-img/900-Series.jpg',
                 description: 'We are lowering product pricing for the 4th time this year - this time on our 900 Series Pressure Gauges! Prices have been reduced on SS liquid filled 901 Series & 911 Series Gauges, as well as the addition of more 1-1/2" & 2" gauges available from inventory for faster delivery times. Contact us for details! https://bit.ly/4g3ezOr'
             },
             linkedin: {
-                image: 'img/900-Series.jpg',
+                image: 'scp-img/900-Series.jpg',
                 description: 'We are lowering product pricing for the fourth time this year - this time on our popular 900 Series Pressure Gauges! Prices have been reduced on NOSHOK Stainless Steel Case liquid filled 901 Series and 911 Series pressure gauges, as well as the addition of more 1-1/2" and 2" gauges available from inventory for faster delivery times. We have also reduced the pricing on several gauge accessories. Contact NOSHOK Corporate Headquarters or your NOSHOK Regional Sales Manager for more details! https://www.noshok.com/products/pressure-level/pressure-gauges/dial-indicating/900-series-abs-stainless-steel-liquid-filled-pressure-gauges/'
             }
         },
@@ -30,20 +30,20 @@ const mockContent = [
         id: 'np2',
         title: 'Water Wastewater Video',
         description: 'Check our new video on NOSHOK\'s instrumentation and assembly solutions for the water and wastewater industry!',
-        thumbnail: 'img/water-wastewater-industry.jpg',
+        thumbnail: 'scp-img/water-wastewater-industry.jpg',
         videoId: 'hv6n3KGoOLI',
         embedCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/hv6n3KGoOLI" title="NOSHOK Product Overview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
         platformContent: {
             facebook: {
-                image: 'img/water-wastewater-industry.jpg',
+                image: 'scp-img/water-wastewater-industry.jpg',
                 description: 'Check our new video on NOSHOK\'s instrumentation and assembly solutions for the water and wastewater industry! NOSHOK provides a variety of application-focused products designed to easily integrate into a system and deliver highly accurate, reliable performance. #watertreatment #water #cleanwater #reverseosmosis #drinkingwater #waterpurification #wastewater #waterfiltration #waterpurifier #wastewatertreatment #purewater #waterquality #watertreatmentplant #watersoftener #health #safewater #filterair #environment #filtration #drinkwater #irrigation #hydration #pump #industrial #hardwater #softwater #healthylifestyle #waterindustry #engineering'
             },
             x: {
-                image: 'img/water-wastewater-industry.jpg',
+                image: 'scp-img/water-wastewater-industry.jpg',
                 description: 'Check our new video on NOSHOK\'s solutions for the water and wastewater industry! Learn about our application-focused products & assemblies designed to easily integrate into a system and deliver highly accurate, reliable performance. https://bit.ly/4dUSMpP'
             },
             linkedin: {
-                image: 'img/water-wastewater-industry.jpg',
+                image: 'scp-img/water-wastewater-industry.jpg',
                 description: 'Check our new video on NOSHOK\'s instrumentation and assembly solutions for the water and wastewater industry! NOSHOK provides a variety of application-focused products designed to easily integrate into a system and deliver highly accurate, reliable performance. #watertreatment #water #cleanwater #reverseosmosis #drinkingwater #waterpurification #wastewater #waterfiltration #waterpurifier #wastewatertreatment #purewater #waterquality #watertreatmentplant #watersoftener #health #safewater #filterair #environment #filtration #drinkwater #irrigation #hydration #pump #industrial #hardwater #softwater #healthylifestyle #waterindustry #engineering'
             }
         },
@@ -56,19 +56,19 @@ const mockContent = [
         id: 'np3',
         title: 'Type 25 & 29 Diaphragm Seals Static',
         description: 'Great news! We\'ve increased stock availability for all Hastelloy and Monel configurations on our NOSHOK Type 25 and Type 29 Diaphragm seals...',
-        thumbnail: 'img/type-25-29-diaphragm-seals.jpg',
-        highResImage: 'img/type-25-29-diaphragm-seals.jpg',
+        thumbnail: 'scp-img/type-25-29-diaphragm-seals.jpg',
+        highResImage: 'scp-img/type-25-29-diaphragm-seals.jpg',
         platformContent: {
             facebook: {
-                image: 'img/type-25-29-diaphragm-seals.jpg',
+                image: 'scp-img/type-25-29-diaphragm-seals.jpg',
                 description: 'Great news! We\'ve increased stock availability for all Hastelloy and Monel configurations on our NOSHOK Type 25 and Type 29 Diaphragm seals, reducing lead times and delivering even more value to our partners. Learn more about these products! https://bit.ly/4dfnp9q #Innovation #CustomerSupport #NOSHOK'
             },
             x: {
-                image: 'img/type-25-29-diaphragm-seals.jpg',
+                image: 'scp-img/type-25-29-diaphragm-seals.jpg',
                 description: 'Great news! We\'ve increased stock availability for all Hastelloy and Monel configurations on our NOSHOK Type 25 and Type 29 Diaphragm seals, reducing lead times and delivering even more value to our partners. Learn more about these products! #Innovation #CustomerSupport #NOSHOK'
             },
             linkedin: {
-                image: 'img/type-25-29-diaphragm-seals.jpg',
+                image: 'scp-img/type-25-29-diaphragm-seals.jpg',
                 description: 'Discover the nine essential advantages of modern pressure transmitters that make them indispensable in industrial applications. From intelligent diagnostics and robust construction to superior accuracy and reliability, these advanced instruments deliver exceptional performance in demanding environments.'
             }
         },
@@ -81,19 +81,19 @@ const mockContent = [
        id: 'np4',
         title: 'SV Series Connectors',
         description: 'NOSHOK has re-engineered our SV Series Connectors with Integral Valve for significantly easier assembly and ease of use.',
-        thumbnail: 'img/sv-series-connectors-static.jpg',
-        highResImage: 'img/sv-series-connectors-static.jpg',
+        thumbnail: 'scp-img/sv-series-connectors-static.jpg',
+        highResImage: 'scp-img/sv-series-connectors-static.jpg',
         platformContent: {
             facebook: {
-                image: 'img/sv-series-connectors-static.jpg',
+                image: 'scp-img/sv-series-connectors-static.jpg',
                 description: 'NOSHOK has re-engineered our SV Series Connectors with Integral Valve for significantly easier assembly and ease of use. The patent-pending new design consolidates components to allow users to assemble and attach the connectors to an installation in a few easy steps without requiring rotation of the valve. Learn more! https://bit.ly/3Y97zY7'
             },
             x: {
-                image: 'img/sv-series-connectors-static.jpg',
+                image: 'scp-img/sv-series-connectors-static.jpg',
                 description: 'NOSHOK has re-engineered our SV Series Connectors with Integral Valve for significantly easier assembly and ease of use. The patent-pending design consolidates components to allow assembly and attachment to an installation in a few easy steps. https://bit.ly/3Y97zY7'
             },
             linkedin: {
-                image: 'img/sv-series-connectors-static.jpg',
+                image: 'scp-img/sv-series-connectors-static.jpg',
                 description: 'NOSHOK has re-engineered our SV Series Connectors with Integral Valve for significantly easier assembly and ease of use. The patent-pending new design consolidates components to allow users to assemble and attach the connectors to an installation in a few easy steps without requiring rotation of the valve. Learn more! https://www.noshok.com/products/valves/connectors/sv-series-connectors-stabilized-with-integral-block-valve-new/'
             }
         },
@@ -107,19 +107,19 @@ const mockContent = [
         id: 'fc1',
         title: 'New DIN Form A Electrical Connection for PT40 Series',
         description: 'To further expand available options, NOSHOK is now offering the PT40 Series High Accuracy Pressure Transmitter with a DIN EN 175301-803 Form A electrical connection.',
-        thumbnail: 'img/new-DIN-form-A.jpg',
-        highResImage: 'img/new-DIN-form-A.jpg',
+        thumbnail: 'scp-img/new-DIN-form-A.jpg',
+        highResImage: 'scp-img/new-DIN-form-A.jpg',
         platformContent: {
             facebook: {
-                image: 'img/new-DIN-form-A.jpg',
+                image: 'scp-img/new-DIN-form-A.jpg',
                 description: 'To further expand available options, NOSHOK is now offering the PT40 Series High Accuracy Pressure Transmitter with a DIN EN 175301-803 Form A electrical connection. This connection can be configured in four versions, to help customers adapt the PT40 to a wide variety of electrical termination requirements. As you are likely aware, NOSHOK\'s legacy 100, 200, 300 and 615 Series pressure transmitters have been replaced by our new re-engineered PT Series Fixed Range pressure transmitters. The new NOSHOK PT Series portfolio provides significant performance enhancements, increased options and availability – all at reduced pricing with improved delivery times! To crossover the legacy transmitter part numbers to the new PT Series, use the PT Crossover Tool on our website. https://www.noshok.com/products/pressure-level/pressure-transducers-transmitters/industrial/pt40-series-high-accuracy-fixed-range-transmitters-transducers/'
             },
             x: {
-                image: 'img/new-DIN-form-A.jpg',
+                image: 'scp-img/new-DIN-form-A.jpg',
                 description: 'To further expand available options, NOSHOK is now offering the PT40 Series High Accuracy Pressure Transmitter with a DIN EN 175301-803 Form A electrical connection. Learn more! https://bit.ly/4b7kxdI'
             },
             linkedin: {
-                image: 'img/new-DIN-form-A.jpg',
+                image: 'scp-img/new-DIN-form-A.jpg',
                 description: 'To further expand available options, NOSHOK is now offering the PT40 Series High Accuracy Pressure Transmitter with a DIN EN 175301-803 Form A electrical connection. This connection can be configured in four versions, to help customers adapt the PT40 to a wide variety of electrical termination requirements. As you are likely aware, NOSHOK\'s legacy 100, 200, 300 and 615 Series pressure transmitters have been replaced by our new re-engineered PT Series Fixed Range pressure transmitters. The new NOSHOK PT Series portfolio provides significant performance enhancements, increased options and availability – all at reduced pricing with improved delivery times! To crossover the legacy transmitter part numbers to the new PT Series, use the PT Crossover Tool on our website. https://www.noshok.com/products/pressure-level/pressure-transducers-transmitters/industrial/pt40-series-high-accuracy-fixed-range-transmitters-transducers/'
             }
         },
@@ -132,19 +132,19 @@ const mockContent = [
         id: 'fc2',
         title: 'PTI Series Transmitters Static',
         description: 'NOSHOK PTI Series Premier Intelligent Pressure Transmitters offer many design advantages to minimize temperature and position error and provide greater rangeability for less required inventory!',
-        thumbnail: 'img/pti-series-static.jpg',
-        highResImage: 'img/pti-series-static.jpg',
+        thumbnail: 'scp-img/pti-series-static.jpg',
+        highResImage: 'scp-img/pti-series-static.jpg',
         platformContent: {
             facebook: {
-                image: 'img/pti-series-static.jpg',
+                image: 'scp-img/pti-series-static.jpg',
                 description: 'NOSHOK PTI Series Premier Intelligent Pressure Transmitters offer many design advantages to minimize temperature and position error and provide greater rangeability for less required inventory! Active temperature compensation for fast, accurate readings, 3-year warranty, HART® options available. These transmitters are ideal for general industrial, pulp & paper, water & wastewater, power generation and food & beverage applications. Learn more! bit.ly/3KnqrwB #pressuretransmitter #industrial #papermill #foodandbeverageindustry #dairyindustry #PowerGen #waterandwastewater #watertreatment #NOSHOK'
             },
             x: {
-                image: 'img/pti-series-static.jpg',
+                image: 'scp-img/pti-series-static.jpg',
                 description: 'PTI Series Pressure Transmitters offer design advantages to minimize temperature & position error and provide greater rangeability for less required inventory! Learn more http://bit.ly/3KnqrwB #industrial #foodandbeverage #dairyindustry #PowerGen #waterwastewater #NOSHOK'
             },
             linkedin: {
-                image: 'img/pti-series-static.jpg',
+                image: 'scp-img/pti-series-static.jpg',
                 description: 'NOSHOK PTI Series Premier Intelligent Pressure Transmitters offer many design advantages to minimize temperature and position error and provide greater rangeability for less required inventory! Active temperature compensation for fast, accurate readings, 3-year warranty, HART® options available. These transmitters are ideal for general industrial, pulp & paper, water & wastewater, power generation and food & beverage applications. Learn more! #pressuretransmitter #industrial #papermill #foodandbeverageindustry #dairyindustry #PowerGen #waterandwastewater #watertreatment #NOSHOK https://www.noshok.com/pti-series-intelligent-industrial-pressure-transmitters-transducers/'
             }
         },
@@ -157,19 +157,19 @@ const mockContent = [
         id: 'fc3',
         title: 'PT Series Transmitters Static',
         description: 'NOSHOK has re-engineered our general purpose fixed range pressure transmitter portfolio, which replaces our legacy 100, 200, 300 and 615 Series transmitters.',
-        thumbnail: 'img/pt-series.jpg',
-        highResImage: 'img/pt-series.jpg',
+        thumbnail: 'scp-img/pt-series.jpg',
+        highResImage: 'scp-img/pt-series.jpg',
         platformContent: {
             facebook: {
-                image: 'img/pt-series.jpg',
+                image: 'scp-img/pt-series.jpg',
                 description: 'NOSHOK has re-engineered our general purpose fixed range pressure transmitter portfolio, which replaces our legacy 100, 200, 300 and 615 Series transmitters. The new PT Series pressure transmitter portfolio provides significant performance improvements and options – all at reduced pricing! Use our Crossover Tool to cross legacy part numbers to the new PT Series. https://bit.ly/3ORG1D3 Learn more! #pressuremeasurement #pressuresensor #transmitter #NOSHOK'
             },
             x: {
-                image: 'img/pt-series.jpg',
+                image: 'scp-img/pt-series.jpg',
                 description: 'NOSHOK has re-engineered our general purpose fixed range pressure transmitter portfolio, which replaces our legacy 100, 200, 300 and 615 Series transmitters. The new PT Series pressure transmitter portfolio provides significant performance improvements and options – all at reduced pricing! Use our Crossover Tool to cross legacy part numbers to the new PT Series. https://bit.ly/3ORG1D3 Learn more! #pressuremeasurement #pressuresensor #transmitter #NOSHOK'
             },
             linkedin: {
-                image: 'img/pt-series.jpg',
+                image: 'scp-img/pt-series.jpg',
                 description: 'NOSHOK announces the new PT Series general purpose pressure transmitter portfolio, which incorporates significant performance improvements & options that are better aligned with customer & market demands – all at reduced pricing! https://bit.ly/3MIOmaV The new PT Series portfolio replaces several legacy NOSHOK transmitters, including the 100, 200, 300 and 615 Series Transmitters. Find out more about this transition! #pressuremeasurement #pressuresensor #transmitter #NOSHOK'
             }
         },
@@ -182,19 +182,19 @@ const mockContent = [
        id: 'fc4',
         title: 'PGE20 Series Digital Gauge',
         description: 'More features and benefits at a lower price! The new PGE20 Series General Purpose Digital Gauge replaces our legacy 1000 Series Digital Gauge.',
-        thumbnail: 'img/pge20.jpg',
-        highResImage: 'img/pge20.jpg',
+        thumbnail: 'scp-img/pge20.jpg',
+        highResImage: 'scp-img/pge20.jpg',
         platformContent: {
             facebook: {
-                image: 'img/pge20.jpg',
+                image: 'scp-img/pge20.jpg',
                 description: 'More features and benefits at a lower price! The new PGE20 Series General Purpose Digital Gauge replaces our legacy 1000 Series Digital Gauge. The optional enhanced features that were available on the 1000 Series Digital Gauge are standard on the PGE20 Series, including configuration software. Learn more! https://bit.ly/3UQmqpW'
             },
             x: {
-                image: 'img/pge20.jpg',
+                image: 'scp-img/pge20.jpg',
                 description: 'More features and benefits at a lower price! The new NOSHOK General Purpose Digital Gauge replaces our legacy 1000 Series Digital Gauge and offers standard enhanced features including configuration software! https://bit.ly/3UQmqpW'
             },
             linkedin: {
-                image: 'img/pge20.jpg',
+                image: 'scp-img/pge20.jpg',
                 description: 'More features and benefits at a lower price! The new PGE20 Series General Purpose Digital Gauge replaces our legacy 1000 Series Digital Gauge. The optional enhanced features that were available on the 1000 Series Digital Gauge are standard on the PGE20 Series, including configuration software. Learn more!'
             }
         },
@@ -206,37 +206,37 @@ const mockContent = [
 ];
 
 // Global state
-let currentModalItems = [];
-let currentItemIndex = 0;
+let scpCurrentModalItems = [];
+let scpCurrentItemIndex = 0;
 
 // Initialize the page
 document.addEventListener('DOMContentLoaded', function() {
-    initializePage();
-    setupEventListeners();
+    scpInitializePage();
+    scpSetupEventListeners();
 });
 
-function initializePage() {
+function scpInitializePage() {
     const newPosts = mockContent.filter(item => item.category === 'new-posts');
     const featuredContent = mockContent.filter(item => item.category === 'featured');
     
-    renderThumbnails('scp-new-posts-grid', newPosts.slice(0, 4));
-    renderThumbnails('scp-featured-grid', featuredContent.slice(0, 4));
+    scpRenderThumbnails('scp-new-posts-grid', newPosts.slice(0, 4));
+    scpRenderThumbnails('scp-featured-grid', featuredContent.slice(0, 4));
 }
 
-function renderThumbnails(containerId, items) {
+function scpRenderThumbnails(containerId, items) {
     const container = document.getElementById(containerId);
     container.innerHTML = '';
     
     items.forEach(item => {
-        const thumbnailElement = createThumbnailElement(item);
+        const thumbnailElement = scpCreateThumbnailElement(item);
         container.appendChild(thumbnailElement);
     });
 }
 
-function createThumbnailElement(item) {
+function scpCreateThumbnailElement(item) {
     const thumbnail = document.createElement('div');
     thumbnail.className = 'scp-thumbnail';
-    thumbnail.onclick = () => openModalWithItem(item);
+    thumbnail.onclick = () => scpOpenModalWithItem(item);
     
     thumbnail.innerHTML = `
         <div class="scp-thumbnail-container">
@@ -249,7 +249,7 @@ function createThumbnailElement(item) {
     return thumbnail;
 }
 
-function setupEventListeners() {
+function scpSetupEventListeners() {
     // Keyboard navigation
     document.addEventListener('keydown', function(e) {
         const modal = document.getElementById('scp-modal');
@@ -257,55 +257,55 @@ function setupEventListeners() {
         
         switch(e.key) {
             case 'Escape':
-                closeModal();
+                scpCloseModal();
                 break;
             case 'ArrowLeft':
-                previousItem();
+                scpPreviousItem();
                 break;
             case 'ArrowRight':
-                nextItem();
+                scpNextItem();
                 break;
         }
     });
 }
 
-function openModal(category) {
+function scpOpenModal(category) {
     const items = mockContent.filter(item => item.category === category);
-    currentModalItems = items;
-    currentItemIndex = 0;
+    scpCurrentModalItems = items;
+    scpCurrentItemIndex = 0;
     
-    showModal();
-    updateModalContent();
+    scpShowModal();
+    scpUpdateModalContent();
 }
 
-function openModalWithItem(item) {
+function scpOpenModalWithItem(item) {
     const items = mockContent.filter(content => content.category === item.category);
-    currentModalItems = items;
-    currentItemIndex = items.findIndex(content => content.id === item.id);
+    scpCurrentModalItems = items;
+    scpCurrentItemIndex = items.findIndex(content => content.id === item.id);
     
-    showModal();
-    updateModalContent();
+    scpShowModal();
+    scpUpdateModalContent();
 }
 
-function showModal() {
+function scpShowModal() {
     const modal = document.getElementById('scp-modal');
     modal.classList.add('scp-active');
     document.body.style.overflow = 'hidden';
 }
 
-function closeModal() {
+function scpCloseModal() {
     const modal = document.getElementById('scp-modal');
     modal.classList.remove('scp-active');
     document.body.style.overflow = '';
 }
 
-function updateModalContent() {
-    if (currentModalItems.length === 0) return;
+function scpUpdateModalContent() {
+    if (scpCurrentModalItems.length === 0) return;
     
-    const currentItem = currentModalItems[currentItemIndex];
+    const currentItem = scpCurrentModalItems[scpCurrentItemIndex];
     
     // Update counter and title
-    document.getElementById('scp-modal-counter').textContent = `${currentItemIndex + 1} of ${currentModalItems.length}`;
+    document.getElementById('scp-modal-counter').textContent = `${scpCurrentItemIndex + 1} of ${scpCurrentModalItems.length}`;
     document.getElementById('scp-modal-title').textContent = currentItem.title;
     
     // Update image or video
@@ -323,12 +323,12 @@ function updateModalContent() {
                 allowfullscreen
                 style="min-height: 300px;">
             </iframe>
-            <button class="scp-nav-arrow scp-nav-arrow-left" onclick="previousItem()">
+            <button class="scp-nav-arrow scp-nav-arrow-left" onclick="scpPreviousItem()">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <polyline points="15,18 9,12 15,6"></polyline>
                 </svg>
             </button>
-            <button class="scp-nav-arrow scp-nav-arrow-right" onclick="nextItem()">
+            <button class="scp-nav-arrow scp-nav-arrow-right" onclick="scpNextItem()">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <polyline points="9,18 15,12 9,6"></polyline>
                 </svg>
@@ -337,12 +337,12 @@ function updateModalContent() {
     } else {
         modalImageSection.innerHTML = `
             <img id="scp-modal-image" src="${currentItem.highResImage}" alt="${currentItem.title}" class="scp-modal-image">
-            <button class="scp-nav-arrow scp-nav-arrow-left" onclick="previousItem()">
+            <button class="scp-nav-arrow scp-nav-arrow-left" onclick="scpPreviousItem()">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <polyline points="15,18 9,12 15,6"></polyline>
                 </svg>
             </button>
-            <button class="scp-nav-arrow scp-nav-arrow-right" onclick="nextItem()">
+            <button class="scp-nav-arrow scp-nav-arrow-right" onclick="scpNextItem()">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <polyline points="9,18 15,12 9,6"></polyline>
                 </svg>
@@ -382,13 +382,13 @@ function updateModalContent() {
     }
     
     // Update thumbnail navigation
-    updateThumbnailNavigation();
+    scpUpdateThumbnailNavigation();
     
     // Show/hide navigation arrows
     const leftArrow = document.querySelector('.scp-nav-arrow-left');
     const rightArrow = document.querySelector('.scp-nav-arrow-right');
     
-    if (currentModalItems.length > 1) {
+    if (scpCurrentModalItems.length > 1) {
         leftArrow.style.display = 'block';
         rightArrow.style.display = 'block';
     } else {
@@ -397,11 +397,11 @@ function updateModalContent() {
     }
 }
 
-function updateThumbnailNavigation() {
+function scpUpdateThumbnailNavigation() {
     const container = document.getElementById('scp-modal-thumbnails');
     const scrollContainer = container.querySelector('.scp-thumbnails-scroll');
     
-    if (currentModalItems.length <= 1) {
+    if (scpCurrentModalItems.length <= 1) {
         container.style.display = 'none';
         return;
     }
@@ -409,12 +409,12 @@ function updateThumbnailNavigation() {
     container.style.display = 'block';
     scrollContainer.innerHTML = '';
     
-    currentModalItems.forEach((item, index) => {
+    scpCurrentModalItems.forEach((item, index) => {
         const thumbnailElement = document.createElement('div');
-        thumbnailElement.className = `scp-modal-thumbnail ${index === currentItemIndex ? 'scp-active' : ''}`;
+        thumbnailElement.className = `scp-modal-thumbnail ${index === scpCurrentItemIndex ? 'scp-active' : ''}`;
         thumbnailElement.onclick = () => {
-            currentItemIndex = index;
-            updateModalContent();
+            scpCurrentItemIndex = index;
+            scpUpdateModalContent();
         };
         
         thumbnailElement.innerHTML = `<img src="${item.thumbnail}" alt="${item.title}">`;
@@ -422,22 +422,22 @@ function updateThumbnailNavigation() {
     });
 }
 
-function nextItem() {
-    if (currentModalItems.length === 0) return;
-    currentItemIndex = (currentItemIndex + 1) % currentModalItems.length;
-    updateModalContent();
+function scpNextItem() {
+    if (scpCurrentModalItems.length === 0) return;
+    scpCurrentItemIndex = (scpCurrentItemIndex + 1) % scpCurrentModalItems.length;
+    scpUpdateModalContent();
 }
 
-function previousItem() {
-    if (currentModalItems.length === 0) return;
-    currentItemIndex = (currentItemIndex - 1 + currentModalItems.length) % currentModalItems.length;
-    updateModalContent();
+function scpPreviousItem() {
+    if (scpCurrentModalItems.length === 0) return;
+    scpCurrentItemIndex = (scpCurrentItemIndex - 1 + scpCurrentModalItems.length) % scpCurrentModalItems.length;
+    scpUpdateModalContent();
 }
 
-async function downloadForPlatform(platform) {
-    if (currentModalItems.length === 0) return;
+async function scpDownloadForPlatform(platform) {
+    if (scpCurrentModalItems.length === 0) return;
     
-    const currentItem = currentModalItems[currentItemIndex];
+    const currentItem = scpCurrentModalItems[scpCurrentItemIndex];
     
     // Get platform-specific content
     const platformContent = currentItem.platformContent && currentItem.platformContent[platform];
@@ -480,9 +480,9 @@ async function downloadForPlatform(platform) {
     }
 }
 
-function copyFacebookText() {
-    if (currentModalItems.length === 0) return;
-    const currentItem = currentModalItems[currentItemIndex];
+function scpCopyFacebookText() {
+    if (scpCurrentModalItems.length === 0) return;
+    const currentItem = scpCurrentModalItems[scpCurrentItemIndex];
     const platformContent = currentItem.platformContent && currentItem.platformContent.facebook;
     const textToCopy = platformContent ? platformContent.description : currentItem.description;
     const button = document.getElementById('scp-copy-text-button');
@@ -507,10 +507,10 @@ function copyFacebookText() {
     });
 }
 
-function copyEmbedCode() {
-    if (currentModalItems.length === 0) return;
+function scpCopyEmbedCode() {
+    if (scpCurrentModalItems.length === 0) return;
     
-    const currentItem = currentModalItems[currentItemIndex];
+    const currentItem = scpCurrentModalItems[scpCurrentItemIndex];
     
     if (currentItem.type === 'video' && currentItem.embedCode) {
         navigator.clipboard.writeText(currentItem.embedCode).then(() => {
